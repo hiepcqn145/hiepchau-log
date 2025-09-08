@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MV2 on Hiep Chau</title>
+    <link>http://localhost:1313/tags/mv2/</link>
+    <description>Recent content in MV2 on Hiep Chau</description>
+    <generator>Hugo</generator>
+    <language>vi-vn</language>
+    <lastBuildDate>Sat, 30 Aug 2025 16:50:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/mv2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Bật lại uBlock Origin trên Google Chrome mới</title>
+      <link>http://localhost:1313/posts/turn-on-ublock-origin/</link>
+      <pubDate>Sat, 30 Aug 2025 16:50:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/turn-on-ublock-origin/</guid>
+      <description>&lt;p&gt;Sáng nay vào văn phòng công ty thấy Google Chrome của mình tự động update lên version &lt;code&gt;138.0.7204.169&lt;/code&gt;. Hàng loạt website mình truy cập hằng ngày tràn ngập trong quảng cáo. Truy cập vô Extensions Manager thì thấy 2 extensions mình dùng để chặn quảng cáo là &lt;code&gt;uBlock Origin&lt;/code&gt; và &lt;code&gt;Violent Monkey&lt;/code&gt; đã tự động disable (do chạy ở MV2) và không bật lên lại được nữa - đánh dấu bước chuyển đổi sang Manifest V3 (MV3).&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

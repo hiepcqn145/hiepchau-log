@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>NAS on Hiep Chau</title>
+    <link>http://localhost:1313/tags/nas/</link>
+    <description>Recent content in NAS on Hiep Chau</description>
+    <generator>Hugo</generator>
+    <language>vi-vn</language>
+    <lastBuildDate>Tue, 19 Aug 2025 08:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/nas/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>unRAID Server: Cập nhật tháng 8.2025</title>
+      <link>http://localhost:1313/posts/my-homelab-in-august-2025/</link>
+      <pubDate>Tue, 19 Aug 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/posts/my-homelab-in-august-2025/</guid>
+      <description>&lt;p&gt;Nếu đã từng theo dõi blog của Hiệp (ờm, blog cũ những năm trước đó), chắc hẳn các bạn đã biết mình đã chia sẻ khá nhiều về Debian (L1 Pro) hoặc là XPEnology (NAS Fake J1900). Cũng vì một số lý do cá nhân mà mình phải đóng các blog cũ đã xây dựng và cho đến bây giờ thì mình mới quay trở lại.&lt;/p&gt;&#xA;&lt;p&gt;Thế nên mình cũng viết lại 1 bài blog để nói về Homelab/NAS hiện tại mình đang sử dụng, cấu hình ra sao, sử dụng HĐH gì, lý do tại sao lại chọn như vậy ? Cũng như chia sẻ các dịch vụ self-host mà mình cài đặt cho đến các nâng cấp trong tương lai.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Cloudflare on Hiep Chau</title>
+    <link>http://localhost:1313/en/tags/cloudflare/</link>
+    <description>Recent content in Cloudflare on Hiep Chau</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 21 Aug 2025 07:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/cloudflare/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Update Dynamic IP with Cloudflare DDNS</title>
+      <link>http://localhost:1313/en/posts/cloudflare-ddns/</link>
+      <pubDate>Thu, 21 Aug 2025 07:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/cloudflare-ddns/</guid>
+      <description>&lt;p&gt;Dynamic IP — this is what most home internet packages offer. That means your IP address can change anytime, unpredictably, like when your wife suddenly gets mad at you. 😱&lt;/p&gt;&#xA;&lt;p&gt;With constantly changing IPs, connecting to your unRAID server becomes difficult. And even if you have a static IP, remembering something like &lt;code&gt;101.101.97.255&lt;/code&gt; is not realistic. I can&amp;rsquo;t even remember how much is in my secret stash, let alone a string of numbers like that.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>UnRAID on Hiep Chau</title>
+    <link>http://localhost:1313/en/tags/unraid/</link>
+    <description>Recent content in UnRAID on Hiep Chau</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 01 Sep 2025 19:20:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/unraid/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>unRAID Server: Install Nginx Proxy Manager</title>
+      <link>http://localhost:1313/en/posts/unraid-install-nginx-proxy-manager/</link>
+      <pubDate>Mon, 01 Sep 2025 19:20:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/unraid-install-nginx-proxy-manager/</guid>
+      <description>&lt;p&gt;Nginx Proxy Manager (NPM) is a tool for managing and configuring Nginx reverse proxy through a user-friendly web interface. It supports multiple domains, HTTPS/SSL certificates, and automatic Let’s Encrypt integration. This allows you to configure Reverse Proxy, SSL, Redirects, and many other features without having to manually edit Nginx configuration files.&lt;/p&gt;&#xA;&lt;p&gt;This article details the process of installing NPM on unRAID with PostgreSQL instead of using the default SQLite provided by NPM.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>unRAID Server: Install PostgreSQL</title>
+      <link>http://localhost:1313/en/posts/unraid-install-postgresql/</link>
+      <pubDate>Sat, 23 Aug 2025 14:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/unraid-install-postgresql/</guid>
+      <description>&lt;p&gt;PostgreSQL is the database management platform on my unRAID Server. It not only ensures stability for personal projects like NPM, Vaultwarden, Umami, etc., but also serves as the backbone for all my data activities.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-postgresql&#34;&gt;Why PostgreSQL?&lt;/h2&gt;&#xA;&lt;p&gt;Honestly, I don’t fully understand SQL (like PostgreSQL or MariaDB). However, many self-hosted apps require these databases, even though some can run on SQLite. Initially, SQLite seemed convenient since each app creates its own DB file. But eventually, I realized each app having its own SQLite DB was messy. So I consolidated everything into one place for convenience.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Update Dynamic IP with Cloudflare DDNS</title>
+      <link>http://localhost:1313/en/posts/cloudflare-ddns/</link>
+      <pubDate>Thu, 21 Aug 2025 07:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/cloudflare-ddns/</guid>
+      <description>&lt;p&gt;Dynamic IP — this is what most home internet packages offer. That means your IP address can change anytime, unpredictably, like when your wife suddenly gets mad at you. 😱&lt;/p&gt;&#xA;&lt;p&gt;With constantly changing IPs, connecting to your unRAID server becomes difficult. And even if you have a static IP, remembering something like &lt;code&gt;101.101.97.255&lt;/code&gt; is not realistic. I can&amp;rsquo;t even remember how much is in my secret stash, let alone a string of numbers like that.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>unRAID Server: August 2025 Update</title>
+      <link>http://localhost:1313/en/posts/my-homelab-in-august-2025/</link>
+      <pubDate>Tue, 19 Aug 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/my-homelab-in-august-2025/</guid>
+      <description>&lt;p&gt;If you’ve followed my blog before (well, my older blogs a few years back), you probably know I’ve shared quite a bit about Debian (L1 Pro) or XPEnology (Fake NAS J1900). For personal reasons, I had to shut down those old blogs, and only now I’m back.&lt;/p&gt;&#xA;&lt;p&gt;So I decided to write a new post about my current Homelab/NAS setup: what hardware I’m using, which OS I chose, why I picked it, and the self-hosted services I’m running—as well as what upgrades I plan for the future.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

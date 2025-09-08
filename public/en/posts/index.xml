@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Posts on Hiep Chau</title>
+    <link>http://localhost:1313/en/posts/</link>
+    <description>Recent content in Posts on Hiep Chau</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Mon, 01 Sep 2025 19:20:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>unRAID Server: Install Nginx Proxy Manager</title>
+      <link>http://localhost:1313/en/posts/unraid-install-nginx-proxy-manager/</link>
+      <pubDate>Mon, 01 Sep 2025 19:20:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/unraid-install-nginx-proxy-manager/</guid>
+      <description>&lt;p&gt;Nginx Proxy Manager (NPM) is a tool for managing and configuring Nginx reverse proxy through a user-friendly web interface. It supports multiple domains, HTTPS/SSL certificates, and automatic Let’s Encrypt integration. This allows you to configure Reverse Proxy, SSL, Redirects, and many other features without having to manually edit Nginx configuration files.&lt;/p&gt;&#xA;&lt;p&gt;This article details the process of installing NPM on unRAID with PostgreSQL instead of using the default SQLite provided by NPM.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Re-enable uBlock Origin on New Google Chrome</title>
+      <link>http://localhost:1313/en/posts/turn-on-ublock-origin/</link>
+      <pubDate>Sat, 30 Aug 2025 16:50:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/turn-on-ublock-origin/</guid>
+      <description>&lt;p&gt;This morning at the office, I noticed that Google Chrome had automatically updated to version &lt;code&gt;138.0.7204.169&lt;/code&gt;. Several websites I visit daily were suddenly flooded with ads. When I checked the Extensions Manager, I saw that both of my ad-blocking extensions — &lt;code&gt;uBlock Origin&lt;/code&gt; and &lt;code&gt;Violent Monkey&lt;/code&gt; — were disabled (since they use MV2), and I couldn’t re-enable them. This marks the shift toward Manifest V3 (MV3).&lt;/p&gt;&#xA;&lt;div&#xD;&#xA;    class=&#34;alert alert-caution my-6 overflow-hidden rounded-lg transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-md&#34;&#xD;&#xA;    style=&#34;background-color: color-mix(in srgb, var(--color-caution) 10%, transparent);&#xD;&#xA;              border-left-color: var(--color-caution);&#xD;&#xA;              --hover-bg: color-mix(in srgb, var(--color-caution) 15%, transparent);&#34;&#xD;&#xA;    onmouseover=&#34;this.style.backgroundColor = this.style.getPropertyValue(&#39;--hover-bg&#39;)&#34;&#xD;&#xA;    onmouseout=&#34;this.style.backgroundColor = &#39;color-mix(in srgb, var(--color-caution) 10%, transparent)&#39;&#34;&#xD;&#xA;    role=&#34;alert&#34;&#xD;&#xA;    aria-labelledby=&#34;alert-0-title&#34;&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;div&#xD;&#xA;      class=&#34; flex items-center justify-between px-6 py-6&#34;&#xD;&#xA;      &gt;&#xD;&#xA;      &lt;div class=&#34;flex items-center gap-3&#34;&gt;&#xD;&#xA;        &#xD;&#xA;        &lt;h4&#xD;&#xA;          id=&#34;alert-0-title&#34;&#xD;&#xA;          class=&#34;m-0 font-semibold text-foreground/90&#34;&gt;&#xD;&#xA;          WARNING&lt;br&gt;&#xD;&#xA;        &lt;/h4&gt;&#xD;&#xA;      &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;      &#xD;&#xA;      &#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;    &#xD;&#xA;    &lt;div&#xD;&#xA;      id=&#34;alert-0-content&#34;&#xD;&#xA;      class=&#34;alert-content  px-6 pb-6&#34;&gt;&#xD;&#xA;      &lt;div class=&#34;prose prose-sm text-foreground/90 max-w-none&#34;&gt;&#xD;&#xA;        &lt;p&gt;Re-enabling MV2 on Google Chrome is not recommended.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>unRAID Server: Install PostgreSQL</title>
+      <link>http://localhost:1313/en/posts/unraid-install-postgresql/</link>
+      <pubDate>Sat, 23 Aug 2025 14:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/unraid-install-postgresql/</guid>
+      <description>&lt;p&gt;PostgreSQL is the database management platform on my unRAID Server. It not only ensures stability for personal projects like NPM, Vaultwarden, Umami, etc., but also serves as the backbone for all my data activities.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-postgresql&#34;&gt;Why PostgreSQL?&lt;/h2&gt;&#xA;&lt;p&gt;Honestly, I don’t fully understand SQL (like PostgreSQL or MariaDB). However, many self-hosted apps require these databases, even though some can run on SQLite. Initially, SQLite seemed convenient since each app creates its own DB file. But eventually, I realized each app having its own SQLite DB was messy. So I consolidated everything into one place for convenience.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Update Dynamic IP with Cloudflare DDNS</title>
+      <link>http://localhost:1313/en/posts/cloudflare-ddns/</link>
+      <pubDate>Thu, 21 Aug 2025 07:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/cloudflare-ddns/</guid>
+      <description>&lt;p&gt;Dynamic IP — this is what most home internet packages offer. That means your IP address can change anytime, unpredictably, like when your wife suddenly gets mad at you. 😱&lt;/p&gt;&#xA;&lt;p&gt;With constantly changing IPs, connecting to your unRAID server becomes difficult. And even if you have a static IP, remembering something like &lt;code&gt;101.101.97.255&lt;/code&gt; is not realistic. I can&amp;rsquo;t even remember how much is in my secret stash, let alone a string of numbers like that.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>unRAID Server: August 2025 Update</title>
+      <link>http://localhost:1313/en/posts/my-homelab-in-august-2025/</link>
+      <pubDate>Tue, 19 Aug 2025 08:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/my-homelab-in-august-2025/</guid>
+      <description>&lt;p&gt;If you’ve followed my blog before (well, my older blogs a few years back), you probably know I’ve shared quite a bit about Debian (L1 Pro) or XPEnology (Fake NAS J1900). For personal reasons, I had to shut down those old blogs, and only now I’m back.&lt;/p&gt;&#xA;&lt;p&gt;So I decided to write a new post about my current Homelab/NAS setup: what hardware I’m using, which OS I chose, why I picked it, and the self-hosted services I’m running—as well as what upgrades I plan for the future.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Mikrotik: Setup WireGuard VPN</title>
+      <link>http://localhost:1313/en/posts/wireguard-vpn-tunnel/</link>
+      <pubDate>Mon, 18 Aug 2025 08:18:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/wireguard-vpn-tunnel/</guid>
+      <description>&lt;p&gt;You want to securely access your NAS at home from the office without exposing port 22 to avoid brute-force attacks. With a &lt;em&gt;Mikrotik hAP ac²&lt;/em&gt; running RouterOS v7 that supports WireGuard, you can easily set up a secure VPN connection. This allows you to SSH into your NAS safely from anywhere, enhancing your home network security.&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;h3 id=&#34;requirements&#34;&gt;Requirements&lt;/h3&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;&lt;em&gt;Mikrotik&lt;/em&gt;: Router OS Ver 7. Static IP or DDNS&lt;/li&gt;&#xA;&lt;li&gt;&lt;em&gt;Client&lt;/em&gt;: &lt;a href=&#34;https://www.wireguard.com/install/&#34;target=&#34;_blank&#34;&#xD;&#xA;  class=&#34;relative inline-flex items-center&#34;&#xD;&#xA;&gt;WireGuard Client&#xD;&#xA;  &lt;svg id=&#34;external-link&#34; class=&#34;h-3 w-3 ml-1 absolute top-0 right-0 transform translate-x-2/5 -translate-y-1/3&#34;&#xD;&#xA;    fill=&#34;none&#34;&#xD;&#xA;    stroke=&#34;currentColor&#34;&#xD;&#xA;    viewBox=&#34;0 0 24 24&#34;&gt;&lt;path fill=&#34;none&#34; stroke=&#34;currentColor&#34; stroke-linecap=&#34;round&#34; stroke-linejoin=&#34;round&#34; stroke-width=&#34;2&#34; d=&#34;M15 3h6v6m-11 5L21 3m-3 10v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6&#34;/&gt;&lt;/svg&gt;&#xD;&#xA;&lt;/a&gt; installed&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;Issues related to Mikrotik’s PPPoE / DHCP setup are not covered in this post.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

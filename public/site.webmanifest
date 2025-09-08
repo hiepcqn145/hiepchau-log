@@ -1,0 +1,25 @@
+{
+  "background_color": "#ffffff",
+  "categories": [
+    "blog",
+    "technology",
+    "education"
+  ],
+  "description": "a blog relative about homelab, nas, docker, selfhost and life",
+  "dir": "ltr",
+  "display": "standalone",
+  "icons": [
+    {
+      "sizes": "any",
+      "src": "/favicon.svg",
+      "type": "image/svg+xml"
+    }
+  ],
+  "lang": "vi-VN",
+  "name": "Hiep Chau",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "short_name": "Hiep Chau",
+  "start_url": "/",
+  "theme_color": "#09090b"
+}

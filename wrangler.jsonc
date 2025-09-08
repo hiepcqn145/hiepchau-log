@@ -1,0 +1,21 @@
+{
+  "name": "blog",
+  "compatibility_date": "2025-08-18",
+
+  // Build step: build Hugo site before deploy
+  "build": {
+    "command": "hugo --gc --minify"
+  },
+
+  // Static assets settings
+  "assets": {
+    "directory": "./public", // Hugo output folder
+    "html_handling": "auto-trailing-slash", // handle trailing slashes
+    "not_found_handling": "404-page", // use 404.html if available
+    "run_worker_first": false // run static handler before custom code
+  },
+
+  // Deployment settings
+  "workers_dev": true,         // deploy to <your-name>.<workers.dev>
+  "preview_url": true          // auto-generate preview link
+}

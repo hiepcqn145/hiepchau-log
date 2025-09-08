@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>MV2 on Hiep Chau</title>
+    <link>http://localhost:1313/en/tags/mv2/</link>
+    <description>Recent content in MV2 on Hiep Chau</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 30 Aug 2025 16:50:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/mv2/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Re-enable uBlock Origin on New Google Chrome</title>
+      <link>http://localhost:1313/en/posts/turn-on-ublock-origin/</link>
+      <pubDate>Sat, 30 Aug 2025 16:50:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/turn-on-ublock-origin/</guid>
+      <description>&lt;p&gt;This morning at the office, I noticed that Google Chrome had automatically updated to version &lt;code&gt;138.0.7204.169&lt;/code&gt;. Several websites I visit daily were suddenly flooded with ads. When I checked the Extensions Manager, I saw that both of my ad-blocking extensions — &lt;code&gt;uBlock Origin&lt;/code&gt; and &lt;code&gt;Violent Monkey&lt;/code&gt; — were disabled (since they use MV2), and I couldn’t re-enable them. This marks the shift toward Manifest V3 (MV3).&lt;/p&gt;&#xA;&lt;div&#xD;&#xA;    class=&#34;alert alert-caution my-6 overflow-hidden rounded-lg transition-all duration-200 ease-out hover:-translate-y-0.5 hover:shadow-md&#34;&#xD;&#xA;    style=&#34;background-color: color-mix(in srgb, var(--color-caution) 10%, transparent);&#xD;&#xA;              border-left-color: var(--color-caution);&#xD;&#xA;              --hover-bg: color-mix(in srgb, var(--color-caution) 15%, transparent);&#34;&#xD;&#xA;    onmouseover=&#34;this.style.backgroundColor = this.style.getPropertyValue(&#39;--hover-bg&#39;)&#34;&#xD;&#xA;    onmouseout=&#34;this.style.backgroundColor = &#39;color-mix(in srgb, var(--color-caution) 10%, transparent)&#39;&#34;&#xD;&#xA;    role=&#34;alert&#34;&#xD;&#xA;    aria-labelledby=&#34;alert-0-title&#34;&gt;&#xD;&#xA;    &#xD;&#xA;    &lt;div&#xD;&#xA;      class=&#34; flex items-center justify-between px-6 py-6&#34;&#xD;&#xA;      &gt;&#xD;&#xA;      &lt;div class=&#34;flex items-center gap-3&#34;&gt;&#xD;&#xA;        &#xD;&#xA;        &lt;h4&#xD;&#xA;          id=&#34;alert-0-title&#34;&#xD;&#xA;          class=&#34;m-0 font-semibold text-foreground/90&#34;&gt;&#xD;&#xA;          WARNING&lt;br&gt;&#xD;&#xA;        &lt;/h4&gt;&#xD;&#xA;      &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;      &#xD;&#xA;      &#xD;&#xA;    &lt;/div&gt;&#xD;&#xA;&#xD;&#xA;    &#xD;&#xA;    &lt;div&#xD;&#xA;      id=&#34;alert-0-content&#34;&#xD;&#xA;      class=&#34;alert-content  px-6 pb-6&#34;&gt;&#xD;&#xA;      &lt;div class=&#34;prose prose-sm text-foreground/90 max-w-none&#34;&gt;&#xD;&#xA;        &lt;p&gt;Re-enabling MV2 on Google Chrome is not recommended.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

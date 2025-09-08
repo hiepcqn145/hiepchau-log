@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>PostgreSQL on Hiep Chau</title>
+    <link>http://localhost:1313/en/tags/postgresql/</link>
+    <description>Recent content in PostgreSQL on Hiep Chau</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 23 Aug 2025 14:00:00 +0700</lastBuildDate>
+    <atom:link href="http://localhost:1313/en/tags/postgresql/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>unRAID Server: Install PostgreSQL</title>
+      <link>http://localhost:1313/en/posts/unraid-install-postgresql/</link>
+      <pubDate>Sat, 23 Aug 2025 14:00:00 +0700</pubDate>
+      <guid>http://localhost:1313/en/posts/unraid-install-postgresql/</guid>
+      <description>&lt;p&gt;PostgreSQL is the database management platform on my unRAID Server. It not only ensures stability for personal projects like NPM, Vaultwarden, Umami, etc., but also serves as the backbone for all my data activities.&lt;/p&gt;&#xA;&lt;h2 id=&#34;why-postgresql&#34;&gt;Why PostgreSQL?&lt;/h2&gt;&#xA;&lt;p&gt;Honestly, I don’t fully understand SQL (like PostgreSQL or MariaDB). However, many self-hosted apps require these databases, even though some can run on SQLite. Initially, SQLite seemed convenient since each app creates its own DB file. But eventually, I realized each app having its own SQLite DB was messy. So I consolidated everything into one place for convenience.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>
