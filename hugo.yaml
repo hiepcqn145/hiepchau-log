@@ -230,7 +230,7 @@ params:
 
   # comments
   comments:
-    enabled: false
+    enabled: true
     # giscus, disqus, utterances, waline, artalk, twikoo
     system: "giscus"
 
@@ -245,7 +245,7 @@ params:
       emitMetadata: "0"
       inputPosition: "bottom"
       theme: "preferred_color_scheme"
-      lang: "en"
+      lang: "vi"
 
     disqus:
       shortname: ""
