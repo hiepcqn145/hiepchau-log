@@ -1,0 +1,492 @@
+{{ define "body-class" }}template-movies{{ end }}
+{{ define "main" -}}
+  <div class="max-w-6xl mx-auto px-4 py-8">
+    <header class="mb-6">
+      <h2 class="article-title" style="margin:0; font-size:1.8rem;">{{ .Title }}</h2>
+      {{- with .Description -}}
+        <span><i>{{ . }}</i></span>
+      {{- end }}
+    </header>
+
+    {{- /* Year buttons data */ -}}
+    {{- $moviesData := .Site.Data.movies -}}
+    {{- $tvData := .Site.Data.shows -}}
+    {{- $booksData := .Site.Data.books -}}
+    {{- $allYears := slice -}}
+    {{- range $year, $_ := $moviesData }}{{ $allYears = $allYears | append $year }}{{ end -}}
+    {{- range $year, $_ := $tvData }}{{ $allYears = $allYears | append $year }}{{ end -}}
+    {{- range $year, $_ := $booksData }}{{ $allYears = $allYears | append $year }}{{ end -}}
+    {{- $sortedYears := sort (uniq $allYears) "value" "desc" -}}
+    {{- $latestYear := index $sortedYears 0 -}}
+
+    <div class="year-buttons" style="margin-bottom:1rem;">
+      {{- range $sortedYears -}}
+        <button
+          class="year-btn{{ if eq . $latestYear }} active{{ end }}"
+          data-year="{{ . }}"
+          aria-pressed="{{ if eq . $latestYear }}true{{ else }}false{{ end }}"
+          aria-label="Year {{ . }}"
+        >{{ . }}</button>
+      {{- end -}}
+    </div>
+
+    {{- /* Books Section */ -}}
+    {{- if $booksData -}}
+      <section aria-label="Books" class="mb-12">
+        <h3 class="section-title" style="margin-top:0; font-size:1.6rem;">Sách / Books</h3>
+        {{- range $year, $books := $booksData -}}
+          <div
+            class="movies-grid{{ if eq $year $latestYear }} active{{ end }}"
+            data-year="{{ $year }}"
+            data-type="books"
+            role="tabpanel"
+            aria-label="Books from year {{ $year }}"
+          >
+            {{- range $books -}}
+              <div class="movie-card">
+                <div class="movie-poster">
+                  {{- if .cover -}}
+                    <img
+                      src="{{ .cover }}"
+                      alt="{{ .title }} cover"
+                      loading="lazy"
+                      onerror="this.closest('.movie-poster').classList.add('no-cover'); console.warn('Cover failed to load:', this.src);"
+                    />
+                  {{- else -}}
+                    <div class="no-poster">No Poster Avaiable</div>
+                  {{- end -}}
+                </div>
+
+                <div class="movie-info">
+                  <div class="movie-title">
+                    {{- .title -}}{{ with .author }} - {{ . }}{{ end -}}
+                  </div>
+
+                  {{- if .rating -}}
+                    <div class="movie-meta">My Rating⭐: {{ printf "%.1f" .rating }}</div>
+                  {{- else if .progress -}}
+                    <div class="movie-meta progress-wrap" aria-label="Reading progress">
+                      <div class="progress" role="progressbar"
+                           aria-valuemin="0" aria-valuemax="100" aria-valuenow="{{ .progress }}">
+                        <span class="progress-bar" style="width: {{ .progress }}%"></span>
+                      </div>
+                    </div>
+                  {{- end -}}
+
+                  {{- $p := int .progress -}}
+                  <div class="download-links">
+                    {{- if and .rating (gt $p 0) (lt $p 100) -}}
+                      <span class="reading-flag" aria-label="Dropped">❌ Dropped</span>
+                    {{- else if and (not .rating) (gt $p 0) -}}
+                      <span class="reading-flag" aria-label="Currently reading">📖 I'm reading</span>
+                    {{- end -}}
+
+                    {{- with .links -}}
+                      {{- range $i, $l := . -}}
+                        {{- if gt $i 0 }}<span class="sep">|</span>{{ end -}}
+                        <a href="{{ $l.url }}" target="_blank" rel="noopener" title="{{ $l.quality }}">
+                          {{- $l.quality -}}
+                        </a>
+                      {{- end -}}
+                    {{- end -}}
+                  </div>
+                </div>
+              </div>
+            {{- end -}}
+          </div>
+        {{- end -}}
+      </section>
+    {{- end -}}
+
+    {{- /* Movies Section */ -}}
+    {{- if $moviesData -}}
+      <section aria-label="Movies" class="mb-12">
+        <h3 class="section-title" style="margin-top:0; font-size:1.6rem;">Điện Ảnh / Movies</h3>
+        {{- range $year, $movies := $moviesData -}}
+          <div
+            class="movies-grid{{ if eq $year $latestYear }} active{{ end }}"
+            data-year="{{ $year }}"
+            data-type="movies"
+            role="tabpanel"
+            aria-label="Movies from year {{ $year }}"
+          >
+            {{- range $movies -}}
+              <div class="movie-card">
+                <div class="movie-poster">
+                  {{- if .cover -}}
+                    <img
+                      src="{{ .cover }}"
+                      alt="{{ .title }} cover"
+                      loading="lazy"
+                      onerror="this.closest('.movie-poster').classList.add('no-cover'); console.warn('Cover failed to load:', this.src);"
+                    />
+                  {{- else -}}
+                    <div class="no-poster">No Poster Avaiable</div>
+                  {{- end -}}
+                </div>
+
+                <div class="movie-info">
+                  <div class="movie-title">{{ .title }}{{ with .year }} ({{ . }}){{ end }}</div>
+
+                  {{- if .rating -}}
+                    <div class="movie-meta">My Rating⭐: {{ printf "%.1f" .rating }}</div>
+                  {{- end -}}
+
+                  {{- with .links -}}
+                    <div class="download-links">
+                      {{- range $i, $l := . -}}
+                        {{- if gt $i 0 }}<span class="sep">|</span>{{ end -}}
+                        <a href="{{ $l.url }}" target="_blank" rel="noopener" title="{{ $l.quality }}">
+                          {{- $l.quality -}}
+                        </a>
+                      {{- end -}}
+                    </div>
+                  {{- end -}}
+                </div>
+              </div>
+            {{- end -}}
+          </div>
+        {{- end -}}
+      </section>
+    {{- end -}}
+
+    {{- /* TV Shows Section */ -}}
+    {{- if $tvData -}}
+      <section aria-label="TV Shows" class="mb-12">
+        <h3 class="section-title" style="margin-top:0; font-size:1.6rem;">Truyền Hình / TV Shows</h3>
+        {{- range $year, $shows := $tvData -}}
+          <div
+            class="movies-grid{{ if eq $year $latestYear }} active{{ end }}"
+            data-year="{{ $year }}"
+            data-type="shows"
+            role="tabpanel"
+            aria-label="TV Shows from year {{ $year }}"
+          >
+            {{- range $shows -}}
+              <div class="movie-card">
+                <div class="movie-poster">
+                  {{- if .cover -}}
+                    <img
+                      src="{{ .cover }}"
+                      alt="{{ .title }} cover"
+                      loading="lazy"
+                      onerror="this.closest('.movie-poster').classList.add('no-cover'); console.warn('Cover failed to load:', this.src);"
+                    />
+                  {{- else -}}
+                    <div class="no-poster">No Poster Avaiable</div>
+                  {{- end -}}
+                </div>
+
+                <div class="movie-info">
+                  <div class="movie-title">{{ .title }}{{ with .year }} ({{ . }}){{ end }}</div>
+
+                  {{- if .rating -}}
+                    <div class="movie-meta">My Rating⭐: {{ printf "%.1f" .rating }}</div>
+                  {{- end -}}
+
+                  {{- with .links -}}
+                    <div class="download-links">
+                      {{- range $i, $l := . -}}
+                        {{- if gt $i 0 }}<span class="sep">|</span>{{ end -}}
+                        <a href="{{ $l.url }}" target="_blank" rel="noopener" title="{{ $l.quality }}">
+                          {{- $l.quality -}}
+                        </a>
+                      {{- end -}}
+                    </div>
+                  {{- end -}}
+                </div>
+              </div>
+            {{- end -}}
+          </div>
+        {{- end -}}
+      </section>
+    {{- end -}}
+
+    {{- /* Empty state */ -}}
+    {{- if not (or $moviesData $tvData $booksData) -}}
+      <div class="empty-state"><p>Không có dữ liệu để hiển thị.</p></div>
+    {{- end -}}
+  </div>
+
+  <style>
+    .year-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+
+    .year-btn {
+      padding: 0.4rem 1rem;
+      border: 2px solid var(--color-border);
+      background: transparent;
+      color: var(--color-muted-foreground);
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: all 0.2s;
+      opacity: 0.85;
+      outline-offset: 2px;
+    }
+
+    .year-btn:focus-visible {
+      outline: 2px solid var(--color-accent);
+      outline-offset: 3px;
+    }
+
+    .year-btn:hover {
+      border-color: var(--color-primary);
+      opacity: 1;
+    }
+
+    .year-btn.active {
+      background: var(--color-accent);
+      border-color: var(--color-accent);
+      color: var(--color-accent-foreground);
+      opacity: 1;
+    }
+
+    .movies-grid {
+      display: grid;
+      gap: 0.5rem;
+      margin-bottom: 1.5rem;
+      grid-template-columns: repeat(5, minmax(0, 1fr));
+    }
+
+    @media (max-width: 1200px) {
+      .movies-grid {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 992px) {
+      .movies-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 768px) {
+      .movies-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    .movies-grid:not(.active) {
+      display: none;
+    }
+
+    .movie-card {
+      background: var(--color-card);
+      border-radius: 8px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid var(--color-border);
+      font-size: 0.75rem;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+      transition: transform 0.2s;
+      position: relative;
+      padding-bottom: 1.3rem;
+    }
+
+    .movie-card:focus-within,
+    .movie-card:hover {
+      transform: translateY(-2px);
+    }
+
+    .movie-poster {
+      width: 100%;
+      aspect-ratio: 2 / 3;
+      background: var(--color-popover);
+      overflow: hidden;
+      position: relative;
+      border-radius: 4px;
+    }
+
+    .movie-poster img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+      border-radius: inherit;
+      transition: transform 0.3s ease;
+    }
+
+    .movie-card:hover .movie-poster img {
+      transform: scale(1.05);
+    }
+
+    .no-poster {
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(135deg, #9ca3af 0%, #f3f4f6 100%);
+      display: grid;
+      place-items: center;
+      color: #6b7280;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: inherit;
+      padding: 0.5rem;
+    }
+
+    .movie-poster.no-cover {
+      background: linear-gradient(135deg, #9ca3af 0%, #f3f4f6 100%);
+    }
+
+    .movie-poster.no-cover img {
+      display: none;
+    }
+
+    .movie-poster.no-cover::after {
+      content: "No Poster Avaiable";
+      position: absolute;
+      inset: 0;
+      display: grid;
+      place-items: center;
+      font-size: 0.8rem;
+      color: #6b7280;
+      text-align: center;
+      padding: 0.5rem;
+    }
+
+    .movie-info {
+      padding: 0.6rem 0.8rem;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Khi CÓ .download-links: rating/progress là phần tử áp chót */
+    .movie-info:has(> .download-links) > .movie-meta:nth-last-child(2) {
+      margin-top: auto;
+      padding-top: 0.4rem;
+    }
+
+    /* Khi KHÔNG có .download-links: rating/progress là phần tử cuối */
+    .movie-info:not(:has(> .download-links)) > .movie-meta:last-child {
+      margin-top: auto;
+      padding-top: 0.4rem;
+    }
+
+    .movie-title {
+      font-size: 0.8rem;
+      color: var(--color-foreground);
+      margin: 0;
+      line-height: 1.3;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .movie-year {
+      margin-left: 4px;
+      font-size: 0.65rem;
+      color: var(--color-muted-foreground);
+    }
+
+    .movie-meta {
+      margin-top: 4px;
+      color: var(--color-muted-foreground);
+    }
+
+    .download-links {
+      position: absolute;
+      left: 0.8rem;
+      right: 0.8rem;
+      bottom: 0.6rem;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      font-size: 0.65rem;
+      background: transparent;
+
+      /* thêm 3 dòng này để giới hạn 1 dòng + ellipsis */
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .download-links a {
+      color: #4286f4;
+      font-style: italic;
+      text-decoration: none;
+      font-size: 0.7rem;
+
+      /* không cho link tự xuống dòng */
+      white-space: nowrap;
+    }
+
+    .download-links a:hover {
+      opacity: 0.85;
+      text-decoration: underline;
+    }
+
+    .download-links .sep {
+      margin: 0 4px;
+      flex-shrink: 0; /* giữ dấu | không bị co biến mất */
+    }
+
+    .download-links a::before {
+      content: "🔗";   /* có thể đổi thành 📥 hoặc ⬇️ hoặc 🔗*/
+      margin-right: 4px;
+    }
+
+    .section-title {
+      color: var(--color-primary);
+      margin-bottom: 0.5rem;
+    }
+
+    .empty-state {
+      text-align: center;
+      padding: 2rem;
+      background: var(--color-popover);
+      border-radius: 8px;
+      border: 1px solid var(--color-border);
+    }
+
+    .progress-wrap {
+      margin-top: auto;
+      padding-top: 0.4rem;
+    }
+
+    .progress {
+      position: relative;
+      height: 8px;
+      background: var(--color-border);
+      border: 1px solid var(--color-border);
+      border-radius: 999px;
+      overflow: hidden;
+    }
+
+    .progress-bar {
+      display: block;
+      height: 100%;
+      width: 0;
+      background: var(--color-primary);
+      transition: width 0.25s ease;
+    }
+
+    .reading-flag {
+      font-size: 0.8rem;
+      font-style: italic;
+      color: var(--color-muted-foreground);
+    }
+  </style>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded",function(){
+      const yearButtons=document.querySelectorAll(".year-btn");
+      const grids=document.querySelectorAll(".movies-grid");
+      function setActiveYear(y){
+        yearButtons.forEach(b=>{const a=b.dataset.year===y;b.classList.toggle("active",a);b.setAttribute("aria-pressed",a?"true":"false")});
+        grids.forEach(g=>g.classList.toggle("active",g.dataset.year===y));
+      }
+      yearButtons.forEach(b=>b.addEventListener("click",()=>setActiveYear(b.dataset.year)));
+      const initial=[...yearButtons].find(b=>b.classList.contains("active"));
+      if(initial) setActiveYear(initial.dataset.year);
+    });
+  </script>
+{{- end }}
