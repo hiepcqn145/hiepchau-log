@@ -9,6 +9,11 @@ slug: "turn-on-ublock-origin"
 cover: 'https://cdn.anh.moe/f/wOZy1K.png-webp'
 ---
 
+> [!IMPORTANT]
+> 2025/09/09
+>
+> Chrome version `140.0.7339.81` can not turn on MV2 anymore.
+
 This morning at the office, I noticed that Google Chrome had automatically updated to version `138.0.7204.169`. Several websites I visit daily were suddenly flooded with ads. When I checked the Extensions Manager, I saw that both of my ad-blocking extensions — `uBlock Origin` and `Violent Monkey` — were disabled (since they use MV2), and I couldn’t re-enable them. This marks the shift toward Manifest V3 (MV3).
 
 >[!CAUTION] WARNING  
