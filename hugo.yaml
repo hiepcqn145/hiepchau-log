@@ -292,7 +292,7 @@ params:
       id: "your-google-analytics-id"
     umami: 
       enabled: true
-      id: "a788dbf7-e92e-49ed-ab7d-48369602fd1f"
+      id: "9d3312f5-409d-41c3-84e3-42d2ab884168"
       src: "https://analytics.hiepchau.net/script.js"
       domains: "hiepchau.net"
 
