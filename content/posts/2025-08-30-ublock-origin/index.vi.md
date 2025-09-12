@@ -9,6 +9,11 @@ slug: "turn-on-ublock-origin"
 cover: 'https://cdn.anh.moe/f/wOZy1K.png-webp'
 ---
 
+> [!IMPORTANT]
+> 2025/09/09
+>
+> Chrome version `140.0.7339.81` hiện không còn mở lại MV2 được nữa.
+
 Sáng nay vào văn phòng công ty thấy Google Chrome của mình tự động update lên version `138.0.7204.169`. Hàng loạt website mình truy cập hằng ngày tràn ngập trong quảng cáo. Truy cập vô Extensions Manager thì thấy 2 extensions mình dùng để chặn quảng cáo là `uBlock Origin` và `Violent Monkey` đã tự động disable (do chạy ở MV2) và không bật lên lại được nữa - đánh dấu bước chuyển đổi sang Manifest V3 (MV3).
 
 >[!CAUTION] LƯU Ý
