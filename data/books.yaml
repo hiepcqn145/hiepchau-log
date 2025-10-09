@@ -1,4 +1,12 @@
 2025:
+  - title: "Con Đường Chẳng Mấy Ai Đi"
+    author: "M. Scott Peck"
+    cover: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1457355932i/29437143.jpg"
+    rating: 
+    progress: 5
+    # links: 
+    #   - quality: "azw3 | epub | mobi"
+    #     url: "https://storage.hiepchau.net/ebook_manga/ebook/library/%C3%9At%20Quy%C3%AAn%20v%C3%A0%20T%C3%B4i%20-%20Nguy%E1%BB%85n%20Nh%E1%BA%ADt%20%C3%81nh"
   - title: "1 ngày bằng 48 giờ"
     author: "Instant Research Institute"
     cover: "https://cdn1.fahasa.com/media/flashmagazine/images/page_images/1_ngay_bang_48_gio/2021_07_01_09_31_39_1-390x510.JPG"
@@ -6,7 +14,7 @@
     progress: 100
     # links: 
     #   - quality: "azw3 | epub | mobi"
-    #     url: "https://storage.hiepchau.online/ebook_manga/ebook/library/%C3%9At%20Quy%C3%AAn%20v%C3%A0%20T%C3%B4i%20-%20Nguy%E1%BB%85n%20Nh%E1%BA%ADt%20%C3%81nh"
+    #     url: "https://storage.hiepchau.net/ebook_manga/ebook/library/%C3%9At%20Quy%C3%AAn%20v%C3%A0%20T%C3%B4i%20-%20Nguy%E1%BB%85n%20Nh%E1%BA%ADt%20%C3%81nh"
   - title: "Khi Lỗi Thuộc Về Những Vì Sao"
     author: "John Green"
     cover: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1660273739i/11870085.jpg"
@@ -14,7 +22,7 @@
     progress: 25
     # links: 
     #   - quality: "azw3 | epub | mobi"
-    #     url: "https://storage.hiepchau.online/ebook_manga/ebook/library/%C3%9At%20Quy%C3%AAn%20v%C3%A0%20T%C3%B4i%20-%20Nguy%E1%BB%85n%20Nh%E1%BA%ADt%20%C3%81nh"
+    #     url: "https://storage.hiepchau.net/ebook_manga/ebook/library/%C3%9At%20Quy%C3%AAn%20v%C3%A0%20T%C3%B4i%20-%20Nguy%E1%BB%85n%20Nh%E1%BA%ADt%20%C3%81nh"
   - title: "Út Quyên và Tôi"
     author: "Nguyễn Nhật Ánh"
     cover: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1697675741i/143819018.jpg"
@@ -22,53 +30,53 @@
     progress: 100
     links: 
       - quality: "azw3 | epub | mobi"
-        url: "https://storage.hiepchau.online/ebook_manga/ebook/library/%C3%9At%20Quy%C3%AAn%20v%C3%A0%20T%C3%B4i%20-%20Nguy%E1%BB%85n%20Nh%E1%BA%ADt%20%C3%81nh"
+        url: "https://storage.hiepchau.net/ebook_manga/ebook/library/%C3%9At%20Quy%C3%AAn%20v%C3%A0%20T%C3%B4i%20-%20Nguy%E1%BB%85n%20Nh%E1%BA%ADt%20%C3%81nh"
   - title: "Bàn có năm chổ ngồi"
     author: "Nguyễn Nhật Ánh"
     cover: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1589034607i/12376409.jpg"
     rating: 8.5
     links: 
       - quality: "azw3 | epub | mobi"
-        url: "https://storage.hiepchau.online/ebook_manga/ebook/library/B%C3%A0n%20C%C3%B3%20N%C4%83m%20Ch%E1%BB%95%20Ng%E1%BB%93i%20-%20Nguy%E1%BB%85n%20Nh%E1%BA%ADt%20%C3%81nh"
+        url: "https://storage.hiepchau.net/ebook_manga/ebook/library/B%C3%A0n%20C%C3%B3%20N%C4%83m%20Ch%E1%BB%95%20Ng%E1%BB%93i%20-%20Nguy%E1%BB%85n%20Nh%E1%BA%ADt%20%C3%81nh"
   - title: "Điều kỳ diệu của tiệm tạp hóa Namiya"
     author: "Keigo Higashino"
     cover: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1564085721i/44287550.jpg"
     rating: 9.0
     links: 
       - quality: "epub"
-        url: "https://storage.hiepchau.online/ebook_manga/ebook/library/%C4%90i%E1%BB%81u%20K%E1%BB%B3%20Di%E1%BB%87u%20C%E1%BB%A7a%20Ti%E1%BB%87m%20T%E1%BA%A1p%20H%C3%B3a%20%20-%20Higashino%20Keigo"
+        url: "https://storage.hiepchau.net/ebook_manga/ebook/library/%C4%90i%E1%BB%81u%20K%E1%BB%B3%20Di%E1%BB%87u%20C%E1%BB%A7a%20Ti%E1%BB%87m%20T%E1%BA%A1p%20H%C3%B3a%20%20-%20Higashino%20Keigo"
   - title: "Tắt Đèn"
     author: "Ngô Tất Tố"
     cover: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1632025925i/36231208.jpg"
     rating: 9.5
     links: 
       - quality: "azw3 | epub | prc"
-        url: "https://storage.hiepchau.online/ebook_manga/ebook/library/T%E1%BA%AFt%20%C4%90%C3%A8n%20-%20Ng%C3%B4%20T%E1%BA%A5t%20T%E1%BB%91"
+        url: "https://storage.hiepchau.net/ebook_manga/ebook/library/T%E1%BA%AFt%20%C4%90%C3%A8n%20-%20Ng%C3%B4%20T%E1%BA%A5t%20T%E1%BB%91"
   - title: "Không gia đình"
     author: "Hector Malot"
     cover: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1286456723i/1500209.jpg"
     rating: 8.5
     links: 
       - quality: "azw3 | epub | mobi | prc"
-        url: "https://storage.hiepchau.online/ebook_manga/ebook/library/Kh%C3%B4ng%20Gia%20%C4%90%C3%ACnh%20-%20Hector%20Malot"
+        url: "https://storage.hiepchau.net/ebook_manga/ebook/library/Kh%C3%B4ng%20Gia%20%C4%90%C3%ACnh%20-%20Hector%20Malot"
   - title: "Dám Bị Ghét"
     author: "Koga Fumitake & Kishimi Ichiro"
     cover: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1545421684i/43306206.jpg"
     rating: 7.5
     links: 
       - quality: "azw3 | epub | mobi"
-        url: "https://storage.hiepchau.online/ebook_manga/ebook/library/D%C3%A1m%20B%E1%BB%8B%20Gh%C3%A9t%20-%20Koga%20Fumitake%20&%20Kishimi%20Ichiro"
+        url: "https://storage.hiepchau.net/ebook_manga/ebook/library/D%C3%A1m%20B%E1%BB%8B%20Gh%C3%A9t%20-%20Koga%20Fumitake%20&%20Kishimi%20Ichiro"
   - title: "Bố già"
     author: "Mario Puzo"
     cover: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1548843267i/239795.jpg"
     rating: 9.0
     links: 
       - quality: "azw3 | epub | mobi"
-        url: "https://storage.hiepchau.online/ebook_manga/ebook/library/B%E1%BB%91%20Gi%C3%A0%20-%20Mario%20Puzo"
+        url: "https://storage.hiepchau.net/ebook_manga/ebook/library/B%E1%BB%91%20Gi%C3%A0%20-%20Mario%20Puzo"
   - title: "Hai số phận"
     author: "Jeffrey Archer"
     cover: "https://images-na.ssl-images-amazon.com/images/S/compressed.photo.goodreads.com/books/1388965561i/78983.jpg"
     rating: 9.5
     links: 
       - quality: "epub"
-        url: "https://storage.hiepchau.online/ebook_manga/ebook/library/Hai%20S%E1%BB%91%20Ph%E1%BA%ADn%20-%20Jeffrey%20Archer"
+        url: "https://storage.hiepchau.net/ebook_manga/ebook/library/Hai%20S%E1%BB%91%20Ph%E1%BA%ADn%20-%20Jeffrey%20Archer"
