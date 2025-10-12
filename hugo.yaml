@@ -102,6 +102,11 @@ menus:
       weight: 30
       params:
         icon: rss
+    - name: Storage
+      url: https://storage.hiepchau.net
+      weight: 40
+      params:
+        icon: folder
 
   # footer social link
   social:
