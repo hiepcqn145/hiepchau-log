@@ -1,7 +1,7 @@
 ---
 title: 'Hướng dẫn thiết lập Wireguard trên Mikrotik'
 date: 2025-08-18 08:18:00 +0700
-draft: false
+draft: true
 categories: ["Homelab", "Networking"]
 tags: ["VPN", "Mikrotik", "Self-Hosted"]
 pin: false

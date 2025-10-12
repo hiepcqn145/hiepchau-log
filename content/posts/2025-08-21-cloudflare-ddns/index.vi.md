@@ -1,5 +1,5 @@
 ---
-title: 'Cập nhật IP động bằng Cloudflare DDNS'
+title: 'unRAID Server: Cập nhật IP động bằng Cloudflare DDNS'
 date: 2025-08-21 07:00:00 +0700
 draft: false
 categories: ["Homelab"]
@@ -37,6 +37,17 @@ Container cloudflare-ddns sẽ sử dụng Token API tùy chỉnh để gửi IP
 ## Cài đặt cloudflare-ddns
 Mình sử dụng docker image [onzu/cloudflare-ddns](https://github.com/oznu/docker-cloudflare-ddns) mặc dù đã ngưng phát triển nhưng vẫn hoạt động tốt. 
 
+### unRAID UI
+1. Truy cập unRAID Dashboard → APPS → cloudflare ddns
+2. Chọn App → Install
+
+    ![unraid_install](https://cdn.anh.moe/f/Y7uxpl.jpg-webp)
+
+3. Thiết lập các variable của container → Apply để deploy
+![app_config](https://cdn.anh.moe/f/XFxILZo.jpg-webp)
+
+Sau khi container hoạt động, hãy kiểm tra tài khoản Cloudflare để xem Bản ghi A đã được thêm vào tên miền bạn chỉ định với IP bên ngoài hay chưa.
+
 ### Docker compose
 Tạo thư mục để lưu file docker-compose.yaml
 ```bash
@@ -64,17 +75,6 @@ Chạy lệnh để khởi tạo container
 ```bash
 docker-compose up -d
 ```
-
-### unRAID UI
-1. Truy cập unRAID Dashboard → APPS → cloudflare ddns
-2. Chọn App → Install
-
-    ![unraid_install](https://cdn.anh.moe/f/Y7uxpl.jpg-webp)
-
-3. Thiết lập các variable của container → Apply để deploy
-![app_config](https://cdn.anh.moe/f/XFxILZo.jpg-webp)
-
-Sau khi container hoạt động, hãy kiểm tra tài khoản Cloudflare để xem Bản ghi A đã được thêm vào tên miền bạn chỉ định với IP bên ngoài hay chưa.
 
 ## Kết luận
 Vậy là xong, cứ mỗi 15 phút ứng dụng tự động kiểm tra IP Động của bạn và cập nhật IP mới nhất lên Cloudflare. Bây giờ thay vì phải nhớ địa chỉ IPv4 dài ngoằn hoặc phải kiểm tra lại IP nếu nó thay đổi thì mình chỉ cần nhớ mỗi domain `test.hiepchau.net` là xong. 

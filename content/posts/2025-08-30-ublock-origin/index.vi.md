@@ -1,7 +1,7 @@
 ---
 title: 'Bật lại uBlock Origin trên Google Chrome mới'
 date: 2025-08-30 16:50:00 +0700
-draft: false 
+draft: true 
 categories: ["Web Browser"]
 tags: ["Chrome", "MV2", "MV3", "uBlock Origin"]
 pin: false

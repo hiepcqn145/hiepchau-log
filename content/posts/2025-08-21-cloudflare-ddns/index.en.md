@@ -1,5 +1,5 @@
 ---
-title: 'Update Dynamic IP with Cloudflare DDNS'
+title: 'unRAID Server: Update Dynamic IP with Cloudflare DDNS'
 date: 2025-08-21 07:00:00 +0700
 draft: false
 categories: ["Homelab"]
@@ -38,6 +38,18 @@ The cloudflare-ddns container will use a custom API token to send your current I
 ## Install cloudflare-ddns
 I’m using the [onzu/cloudflare-ddns](https://github.com/oznu/docker-cloudflare-ddns) Docker image. Although it’s no longer maintained, it still works great.
 
+### unRAID UI
+
+1. Go to **unRAID Dashboard** → **APPS** → search for `cloudflare ddns`
+2. Select the app → Click **Install**
+
+   ![unraid_install](https://cdn.anh.moe/f/Y7uxpl.jpg-webp)
+
+3. Configure variable of container → Click **Apply** to deploy  
+   ![app_config](https://cdn.anh.moe/f/XFxILZo.jpg-webp)
+
+Once the container is up and running, check your Cloudflare account to see if an **A record** has been added to your specified domain with your current public IP.
+
 ### Docker Compose
 Create a folder for your docker-compose.yaml file:
 
@@ -67,18 +79,6 @@ Run the following command to initialize the container:
 ```bash
 docker-compose up -d
 ```
-
-### unRAID UI
-
-1. Go to **unRAID Dashboard** → **APPS** → search for `cloudflare ddns`
-2. Select the app → Click **Install**
-
-   ![unraid_install](https://cdn.anh.moe/f/Y7uxpl.jpg-webp)
-
-3. Configure variable of container → Click **Apply** to deploy  
-   ![app_config](https://cdn.anh.moe/f/XFxILZo.jpg-webp)
-
-Once the container is up and running, check your Cloudflare account to see if an **A record** has been added to your specified domain with your current public IP.
 
 ## Conclusion
 

@@ -1,7 +1,7 @@
 ---
 title: 'Re-enable uBlock Origin on New Google Chrome'
 date: 2025-08-30 16:50:00 +0700
-draft: false 
+draft: true 
 categories: ["Web Browser"]
 tags: ["Chrome", "MV2", "MV3", "uBlock Origin"]
 pin: false
