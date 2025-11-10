@@ -1,4 +1,9 @@
 2025:
+  - title: "The Resurrected"
+    cover: "https://www.themoviedb.org/t/p/w600_and_h900_bestv2/l1bJ4lSl2pSMpCFpIhhKeT7N34a.jpg"
+    year: 2025
+    rating: 5.2
+    links: []
   - title: "Beyond the Bar"
     cover: "https://www.themoviedb.org/t/p/w1280/nN6mZZxJBPZXBjLxnjgpnoRvswk.jpg"
     year: 2025
@@ -13,11 +18,6 @@
     cover: "https://www.themoviedb.org/t/p/w1280/WWGI3LOzufVJavMdy6BAIInMPY.jpg"
     year: 2025
     rating: 8.5
-    links: []
-  - title: "Gia Đình Haha"
-    cover: "images/giadinhhaha.webp"
-    year: 2025
-    rating: 9.5
     links: []
   - title: "Wednesday"
     cover: "https://www.themoviedb.org/t/p/w1280/kKwy8QiXyQocbDj4haUG0uD1SbF.jpg.webp"
